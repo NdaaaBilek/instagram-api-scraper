@@ -1,5 +1,10 @@
+/**
+ * @author FrierenDv
+ * @version 1.0.0
+ */
+
 import axios from "axios";
-import { Config, API_URL, extractCode, PARSER, Results } from "./Config.js";
+import { Config, API_URL, extractCode, PARSER, Results } from "./Config";
 
 export const insta = async (url: string): Promise<Results> => {
 	const valicode = extractCode(url);
